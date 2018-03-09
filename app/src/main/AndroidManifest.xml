@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.bryonnicoson.standup.ACTION_NOTIFY" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
