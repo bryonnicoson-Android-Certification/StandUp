@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     private NotificationManager mNotificationManager;
 
+    // TODO: Android Oreo - background services, like implicit intent broadcast receivers, are resource
+    // TODO: hogs and are no longer allowed - replace with Job Scheduler
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
